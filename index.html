@@ -3,9 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEM2 CLASS TEST</title>
+    <title>Feedback Form</title>
+    <style>
+        .header{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: larger;
+        }
+        .feedback-container{
+            max-width:700px;
+            margin:40px auto;
+            background:rgb(218, 234, 246);
+            padding:30px;
+            border: 2px solid black;
+            border-radius:15px;
+        }
+        .feedback-container h2{
+            text-align:center;
+            color:#5663ab;
+            margin-bottom:20px;
+        }
+        .feedback-container label{
+            font-weight:bolder;
+            color:#212852;
+        }
+        .input-box{
+            width:95%;
+            padding:12px;
+            margin-top:5px;
+            margin-bottom:20px;
+            border-radius:10px;
+            border:1px solid #403f4a;
+            font-size:16px;
+        }
+        textarea{
+            height:130px;
+            resize:none;
+        }
+        .btn{
+            display:block;
+            width:100%;
+            padding:12px;
+            border:none;
+            background:#07aa2f;
+            color:white;
+            font-size:20px;
+            cursor:pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1>CLASS TEST</h1>
+<div class="header">
+    <h1>Feedback Form</h1>
+    <p>Your opinion helps us to improve! Please share your thoughts.</p>
+</div>
+<div class="feedback-container">
+    <h2>We Would Love to have your opinion!</h2>
+    <form>
+        <label>Your Name</label><br>
+        <input type="text" class="input-box" placeholder="Enter your name" required><br>
+
+        <label>Email</label><br>
+        <input type="email" class="input-box" placeholder="Enter your email" required><br>
+
+        <label>Rate Your Experience</label><br>
+        <select class="input-box">
+            <option> Excellent</option>
+            <option> Good</option>
+            <option> Average</option>
+            <option> Poor</option>
+            <option> Very Poor</option>
+        </select><br>
+
+        <label>Your Feedback</label><br>
+        <textarea class="input-box" placeholder="Write your feedback here..."></textarea><br>
+
+        <button class="btn">Submit Feedback</button><br>
+    </form>
+</div>
+<center><footer>&copy; Harshita, Feedback form</footer></center>
 </body>
 </html>
