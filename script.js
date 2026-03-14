@@ -11,11 +11,14 @@ let car = null;
 console.log(typeof car);
 
 //non-primitive data type
-let student ={
-    name:"Harshita",
-    age:18
-}
+const student ={                //keys cannot be redeclared outside the block in const block
+    name :"Harshita",
+    age :18,
+    cgpa :9.3,
+    isPass :true,
+};
 console.log(student);
+console.log(["cgpa"])
 
 
 //arithmatic operator
@@ -35,9 +38,12 @@ console.log(p--);       //11
 
 //Assignment operator
 let A=10;
-console.log(A+=1);
-console.log(A-=2);
-console.log(A/=2);
+console.log(A+=1);      //11
+console.log(A-=2);      //9
+console.log(A/=2);      //4.5
+console.log(A*=2);      //9
+console.log(A%=2);      //1
+console.log(A**=2);     //1
 
 
 
@@ -46,6 +52,17 @@ let P = 10;
 let Q=5;
 console.log(P>Q);       //true
 console.log(P!=Q);      //true
+console.log(P==Q);      //false
+
+
+//logical operator
+let r=6;
+let s = 5;
+let cond1 = r>s;//true
+let cond2 = a==5;//false
+console.log(cond1 && cond2);
+console.log(cond1 || cond2);
+console.log(!cond2);
 
 
 
