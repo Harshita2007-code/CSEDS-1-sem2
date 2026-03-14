@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(222, 238, 252);
+        }
+        h1{
+            background-color: rgb(5, 255, 255);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JAVA SCRIPT</h1>
+    <h2>Java script variable</h2> 
+    <script>
+        console.log("var variable");
+        const P =10;                    //cannot be redeclared or updated (block scope)
+        let a = "ABES";                 //can be updated only (block scope)
+        var c = null;                   //can be redeclared and updated (global scope)
+        var d = undefined;
+        IsFollow = true;
+        console.log(p);
+        console.log(b);
+        console.log(c);
+        console.log(d);
+        console.log(IsFollow);
+        { 
+             let a = 20;                 /*Error*/
+            console.log(a);
+        }
+
+        /*Error that b is already declared*/
+        let b = "college"; 
+        b = "school"; 
+        // let b ="ABES";
+
+    </script>
+</body>
+</html>
