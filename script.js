@@ -80,7 +80,7 @@ console.log(status);
 
 
 
-//Conditional loop
+//Conditional statement
 let Age=50;
 if(Age >18){
     console.log("Eligible for voting");
