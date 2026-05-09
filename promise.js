@@ -32,6 +32,7 @@ const getData = async() => {
     }
 }
 
+
 //Map Reduce filter
 const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const mulof02= num.map((n) => {return n*2});
@@ -42,6 +43,7 @@ console.log(divby2);
 
 const sumOfNumArray = num.reduce((acc, val) => acc += val,0)
 console.log(sumOfNumArray);
+
 
 //setTimeOut
 const Greet = () => {
