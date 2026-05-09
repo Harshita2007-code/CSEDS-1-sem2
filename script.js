@@ -103,7 +103,6 @@ else
     console.log("not a 3 digit number");
 
 
-
 //FALSY TRUTHY VALUES
 // Falsy value -> false condition, false, 0, null, NaN, undefined
 //Truthy value -> except falsy value
