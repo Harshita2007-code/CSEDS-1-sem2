@@ -1,4 +1,5 @@
-// //primitive data type
+/*primitive data type : size is fixed 
+there are 5 major primitive data types : numbers, string, boolean, undefined, null*/
 let name = "Alice";
 console.log(typeof name);
 let a_ge = 30;
@@ -33,6 +34,7 @@ console.log(++p);       //11
 console.log(p++);       //11
 console.log(--p);       //11
 console.log(p--);       //11
+console.log(q**p);      //1024
 
 
 
@@ -81,6 +83,7 @@ console.log(status);
 
 
 //Conditional statement
+// Q - voting eligibility....
 let Age=50;
 if(Age >18){
     console.log("Eligible for voting");
@@ -92,36 +95,58 @@ else{
     console.log("Invalid age!!");
 }
 
+// Q - 3 digit number or not..
+let x = 45;
+if(x>=100 && x <=999) 
+    console.log("3 digit number");
+else
+    console.log("not a 3 digit number");
 
 
-//Switch case
-let day = 2;
-let message = "";
-switch(day){
-    case "1" :
-        message = "Monday";
-        break;
-    case "2":
-        message = "Tuesday";
-        break;
-    case "3":
-        message = "Wednesday";
-        break;
-    case "4":
-        message = "Thursday";
-        break;
-    case "5":
-        message = "Friday";
-        break;
-    case "6":
-        message = "Saturday";
-        break;
-    case "7":
-        message = "Sunday";
-        break;
-    default:
-        message = "Invalid day";
-}
-console.log(message);
+
+//FALSY TRUTHY VALUES
+// Falsy value -> false condition, false, 0, null, NaN, undefined
+//Truthy value -> except falsy value
+if(undefined){
+    console.log("Hello");       //truthy
+}else console.log("Mello");     //falsy
 
 
+
+// Triple equal to
+let a = 5;
+let b = '5';
+console.log(a==b);              // sees only value
+console.log(a===b);             // sees value and dataType both
+
+
+
+// //Switch case
+// let day = 2;
+// let message = "";
+// switch(day){
+//     case "1" :
+//         message = "Monday";
+//         break;
+//     case "2":
+//         message = "Tuesday";
+//         break;
+//     case "3":
+//         message = "Wednesday";
+//         break;
+//     case "4":
+//         message = "Thursday";
+//         break;
+//     case "5":
+//         message = "Friday";
+//         break;
+//     case "6":
+//         message = "Saturday";
+//         break;
+//     case "7":
+//         message = "Sunday";
+//         break;
+//     default:
+//         message = "Invalid day";
+// }
+// console.log(message);
