@@ -1,7 +1,6 @@
 let heading = document.getElementById("mainHeading");
 let paragraph = document.getElementById("paragraph");
 let input = document.getElementById("userInput");
-
 let fontSize = 16;
 
 // Change heading text (onclick using addEventListener)
