@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,4 +31,38 @@
         root.render(reactElement)
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react</title>
+</head>
+<body>
+    <h3>FOR CDN LINKS: legacy.reactjs.org <br> COMPILER: babeljs</h3>
+    <div id="root">Hello everyone!!</div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel"></script>
+    <script>
+    <div id="root"></div>
+     
+        /*<div>
+            <span id="span-1">1</span>
+            <span id="span-2">2</span>
+            <span id="span-3">3</span>
+        </div>
+        const reactElement = react.createElement("div",{},
+            [React.createElement("span", {id : "span-1"}, "1"),
+            React.createElement("span",{id :"span-2"}, "2"),
+            React.createElement("span",{id :"span-3"}, "3")
+        ])*/
+        const reactElement = react.createElement("div",{}, "Hello React Learners");
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(reactElement)
+    </script>
+</body>
+>>>>>>> 0cd18373e92d88582af168de02defeffc033cc91
 </html>
