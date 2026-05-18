@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUCTION TO DOM</title>
+    <style>
+        h1{
+            color:blue;
+        }
+        #box{
+            height:120px;
+            width:100px;
+            border-radius: 10px;
+            border: 2px solid black;
+            display:flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to DOM Manipulation</h1>
+    <h2>Hello</h2>
+    <h3 id="element1">PIKACHUU</h3>
+    <h3 id="element2">SINCHAN</h3>
+    <p class="para">This is a simple program to demonstrate DOM manipulation.</p>
+    <div id="box">
+        <h1>Heyy!!</h1>
+    </div>
+    <script>
+
+        //changing css through js
+        let x = document.querySelector("h1");
+        x.style.fontFamily="Times New Roman";
+        setTimeout(function(){
+            x.style.color="red";
+        },2000);
+
+        let y = document.querySelector("h2");
+        setTimeout(function(){
+            y.innerHTML= "Hello Harshita";              //changing html through js
+        },4000);                
+
+        let paragraph = document.getElementsByClassName("para");
+        paragraph[0].textContent = "New updated paragraph";
+        paragraph[0].style.color ="green";
+        paragraph[0].style.fontSize ="20px";
+        
+
+        //EVENT LISTENERS
+
+        let p = document.getElementById("element1");
+        p.addEventListener("click", function(){             //update the css on clicking
+            p.style.color = "red";
+            p.style.background = "yellow";
+        });
+
+        let s = document.getElementById("element2");
+        s.addEventListener("mousemove",function(){              //update the css on moving the cursor on this element
+            s.style.color ="white";
+            s.style.background = "blue";
+        });
+
+        s = document.getElementById("element2");
+        s.addEventListener("mouseleave",function(){              //update the css on leaving the cursor from this element
+            s.style.color ="black";
+            s.style.background = "white";
+        });
+
+        let b = document.getElementById("box");
+        b.addEventListener("dblclick",function(){
+            let r1 = Math.floor(Math.random()*256);             //for random colours
+            let r2 = Math.floor(Math.random()*256);
+            let r3 = Math.floor(Math.random()*256);
+            b.style.backgroundColor = `rgb(${r1},${r2}, ${r3})`;
+        });
+        
+    </script>
+
+</body>
+</html>
