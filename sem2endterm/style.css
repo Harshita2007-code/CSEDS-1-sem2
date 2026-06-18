@@ -1,0 +1,42 @@
+body{
+    font-family: Arial;
+    background:  #a1c4fd;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    background:white;
+    padding:30px;
+    width:300px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+input{
+    padding:10px;
+    width:90%;
+    margin:10px 0;
+}
+
+button{
+    padding:10px 20px;
+    background:#ff7e5f;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#df441d;
+}
+
+#output{
+    margin-top:15px;
+    font-size:18px;
+    font-weight:bold;
+}
